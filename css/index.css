@@ -1,0 +1,14 @@
+nav ul li{
+    float: left;
+    list-style: none;
+    width: 25%;
+}
+nav ul li a{
+    display: block;
+    width: 100%;
+    background: yellowgreen;
+    height: 50px;
+    border-right: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+}

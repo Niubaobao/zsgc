@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/update.js"></script>
+</head>
+<body>
+<div ng-app="update" ng-controller="update">
+    <div class="container">
+        <h1 class="text-center">用户修改</h1>
+        <form rol="form" class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">用户名:</label>
+                <div class="col-sm-7">
+                    <input class="form-control" ng-model="msg.username" name="username"placeholder="请输入用户名"id="user" required readonly="readonly" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">昵称:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control"ng-model="msg.nickname" name="nickname" id="nickname" placeholder="请输入昵称" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">密码:</label>
+                <div class="col-sm-7">
+                    <input type="password" ng-model="msg.password" class="form-control" name="password" placeholder="请输入密码" required="required" id="pass">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">年龄:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control"ng-model="msg.age" placeholder="请输入年龄" id="age" name="age">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">性别：</label>
+                <div class="col-sm-7">
+                    <select ng-model="msg.sex">
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">电话:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control"ng-model="msg.telphone" placeholder="请输入年龄" name="telphone" id="phone" >
+                </div>
+            </div>
+            <div class="form-group  has-feedback">
+                <label class="col-sm-2 control-label">邮箱</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control"ng-model="msg.email" placeholder="请输入邮箱" id="email" name="email">
+                </div>
+            </div>
+            <input type="button" id="submit" class="btn btn-success center-block" value="确认修改" ng-click="updatesubmit();">
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

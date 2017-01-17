@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/list.js"></script>
+    <script src="js/shouye.js"></script>
+    <script src="js/update.js"></script>
+    <script src="js/regist.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/commen.js"></script>
+</head>
+<body ng-controller="mycon">
+    <nav class="navbar navbar-fixed-bottom ">
+        <ul>
+            <li><a href="#/regist">注册</a></li>
+            <li><a href="#/">登录</a></li>
+            <li><a href="#/list">列表</a></li>
+            <li><a href="#/update">修改</a></li>
+        </ul>
+    </nav>
+    <div ng-view="">
+
+    </div>
+
+</body>
+</html>
